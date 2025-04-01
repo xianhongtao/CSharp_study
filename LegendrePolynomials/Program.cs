@@ -6,12 +6,7 @@
         int n = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("请输入一个实数x：");
         double x = Convert.ToDouble(Console.ReadLine());
-        //计时
-        DateTime startTime = DateTime.Now;
         double result = LegendrePolynomialF(n, x);
-        DateTime endTime = DateTime.Now;
-        TimeSpan timeSpan = endTime - startTime;
-        Console.WriteLine($"计算时间：{timeSpan.TotalMilliseconds} 毫秒");
         Console.WriteLine($"P_{n}({x}) = {result}");
     }
     private static double LegendrePolynomialF(int n, double x)
