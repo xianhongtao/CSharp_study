@@ -1,4 +1,3 @@
-using System;
 public class LegendrePolynomials
 {
     public static void Main()
@@ -31,6 +30,5 @@ public class LegendrePolynomials
             double P_n_minus_2 = LegendrePolynomialF(n - 2, x);
             return ((2 * n - 1) * x * P_n_minus_1 - (n - 1) * P_n_minus_2) / n;
         }
-        return 0;
     }
 }

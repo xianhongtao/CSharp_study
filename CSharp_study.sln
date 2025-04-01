@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_study", "CSharp_study\CSharp_study.csproj", "{FD885CAE-CE4D-4599-9DD9-A4CF1978C106}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegendrePolynomials", "CSharp_study\LegendrePolynomials.csproj", "{FD885CAE-CE4D-4599-9DD9-A4CF1978C106}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
