@@ -5,7 +5,7 @@
         for (; ; )
         {
             Console.WriteLine("请输入一个整数：");
-            int userInput = int.Parse(Console.ReadLine());
+            long userInput = long.Parse(Console.ReadLine());
             if (IsPrime(userInput))
             {
                 Console.WriteLine($"{userInput}是素数");
@@ -14,11 +14,13 @@
             {
                 Console.WriteLine($"{userInput}不是素数");
             }
+            Console.WriteLine(sizeof (long));
         }
     }
-    static Boolean IsPrime(int number)
+    
+    static Boolean IsPrime(long number)
     {
-        int maxDivisorDigit = (int)Math.Ceiling(Math.Sqrt(number / 10));
+        long maxDivisorDigit = (long)Math.Ceiling(Math.Sqrt(number / 10));
         Boolean isNumberPrime = true;
         if (number <= 1)
         {
