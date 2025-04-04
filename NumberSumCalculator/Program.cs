@@ -4,7 +4,18 @@
     {
         for (; ; )
         {
-            string[] input = Console.ReadLine().Split();
+            string inputLine = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(inputLine))
+            {
+                Console.WriteLine("0");
+                continue;
+            }
+            string[] input = inputLine.Split(' ');
+            if (input.Length < 2)
+            {
+                Console.WriteLine("0");
+                continue;
+            }
             long totalPages = long.Parse(input[0]);
             int divisor = int.Parse(input[1]);
             long sumResult, divisionResult;
