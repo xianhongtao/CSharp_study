@@ -1,4 +1,5 @@
-﻿public class PrimeNumberChecker
+﻿using 
+public class PrimeNumberChecker
 {
     public static void Main()
     {

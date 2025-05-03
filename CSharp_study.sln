@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberSumCalculator", "Numb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLight", "OpenLight\OpenLight.csproj", "{062E0623-91BB-445B-938A-76774C8FCCA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rsaTools", "rsaTools\rsaTools.csproj", "{4E66D706-6675-410D-B6E4-7FBAC7B5881D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{062E0623-91BB-445B-938A-76774C8FCCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062E0623-91BB-445B-938A-76774C8FCCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{062E0623-91BB-445B-938A-76774C8FCCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E66D706-6675-410D-B6E4-7FBAC7B5881D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E66D706-6675-410D-B6E4-7FBAC7B5881D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E66D706-6675-410D-B6E4-7FBAC7B5881D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E66D706-6675-410D-B6E4-7FBAC7B5881D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
