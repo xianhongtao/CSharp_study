@@ -18,12 +18,12 @@ void Step(Boolean[,] chessPlate, int currentRow)
             }
             else
             {
-                Step(PlaceQween(newPlate, currentRow, currentColumn), currentRow + 1);
+                Step(MarkQueenAttacks(newPlate, currentRow, currentColumn), currentRow + 1);
             }
         }
     }
 }
-static Boolean[,] PlaceQween(Boolean[,] chessPlate, int x, int y)
+static Boolean[,] MarkQueenAttacks(Boolean[,] chessPlate, int x, int y)
 {
     for (int i = 0; i < chessPlate.GetLength(0); i++)
     {
