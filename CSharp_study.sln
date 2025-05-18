@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegendrePolynomials", "Lege
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberSumCalculator", "NumberSumCalculator\NumberSumCalculator.csproj", "{8697837A-5A04-4C9D-A19A-E5D0FB7F447F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NQween", "NQween\NQween.csproj", "{D4DC50AF-80DF-4AE7-B9F2-4718E1FB40D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C48DF0A9-68D8-451D-9F69-2043332B8AC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8697837A-5A04-4C9D-A19A-E5D0FB7F447F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8697837A-5A04-4C9D-A19A-E5D0FB7F447F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8697837A-5A04-4C9D-A19A-E5D0FB7F447F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DC50AF-80DF-4AE7-B9F2-4718E1FB40D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DC50AF-80DF-4AE7-B9F2-4718E1FB40D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DC50AF-80DF-4AE7-B9F2-4718E1FB40D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DC50AF-80DF-4AE7-B9F2-4718E1FB40D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C48DF0A9-68D8-451D-9F69-2043332B8AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48DF0A9-68D8-451D-9F69-2043332B8AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48DF0A9-68D8-451D-9F69-2043332B8AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48DF0A9-68D8-451D-9F69-2043332B8AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
