@@ -1,5 +1,4 @@
-﻿using 
-public class PrimeNumberChecker
+﻿public class PrimeNumberChecker
 {
     public static void Main()
     {
@@ -15,10 +14,10 @@ public class PrimeNumberChecker
             {
                 Console.WriteLine($"{userInput}不是素数");
             }
-            Console.WriteLine(sizeof (long));
+            Console.WriteLine(sizeof(long));
         }
     }
-    
+
     static Boolean IsPrime(long number)
     {
         long maxDivisorDigit = (long)Math.Ceiling(Math.Sqrt(number / 10));
@@ -27,7 +26,7 @@ public class PrimeNumberChecker
         {
             isNumberPrime = false;
         }
-        if ((number % 2 == 0) || (number % 3 == 0) || (number % 5 == 0) || (number % 7 == 0) )
+        if ((number % 2 == 0) || (number % 3 == 0) || (number % 5 == 0) || (number % 7 == 0))
         {
             isNumberPrime = false;
         }
@@ -38,7 +37,7 @@ public class PrimeNumberChecker
                 isNumberPrime = false;
             }
         }
-        if ((number == 2) || (number == 3) || (number == 5) || (number == 7) || (number == 11) || (number == 13) || (number == 17) || (number == 19) || (number == 23) || (number== 29))
+        if ((number == 2) || (number == 3) || (number == 5) || (number == 7) || (number == 11) || (number == 13) || (number == 17) || (number == 19) || (number == 23) || (number == 29))
         {
             isNumberPrime = true;
         }
