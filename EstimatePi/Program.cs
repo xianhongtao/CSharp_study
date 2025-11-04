@@ -1,7 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 Console.WriteLine("蒙特卡洛圆周率估算（按ESC退出）");
 

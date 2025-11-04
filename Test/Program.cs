@@ -1,23 +1,11 @@
-﻿Console.WriteLine(GetLoopLength(32, 24));
-static int GetLoopLength(int n, int x)
+﻿Console.WriteLine(GetDigitSum(1231442));
+static int GetDigitSum(int number)
 {
-    if (n % x == 0 || x % n == 0)
+    int sum = 0;
+    while (number > 0)
     {
-        if (n % x == 0 && n != 1)
-        {
-            n /= x;
-        }
-        if (x % n == 0 && x != 1)
-        {
-            x /= n;
-        }
+        sum += number % 10;
+        number /= 10;
     }
-    if (n > x)
-    {
-        return n;
-    }
-    else
-    {
-        return x;
-    }
+    return sum;
 }
