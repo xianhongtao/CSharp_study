@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstimatePi", "EstimatePi\Es
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Single Linked List", "Single Linked List\Single Linked List.csproj", "{6CA24F3E-A916-4326-8C28-15DEEAA48F84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadtreePiCalculation", "QuadtreePiCalculation\QuadtreePiCalculation.csproj", "{474212D4-F900-448A-8940-7D39FE452C86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadTreePiCalculation", "QuadTreePiCalculation\QuadTreePiCalculation.csproj", "{474212D4-F900-448A-8940-7D39FE452C86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
