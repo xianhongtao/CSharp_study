@@ -8,10 +8,8 @@ public struct Tile
     private int _x;
     private int _y;
     private int _tileSize;
-    private Point _topLeftPoint;
-    private Point _topRightPoint;
-    private Point _bottomLeftPoint;
-    private Point _bottomRightPoint;
+    private Point _nearPoint;
+    private Point _farPoint;
 
     /// <summary>
     /// 初始化一个新的瓦片实例。
@@ -26,10 +24,8 @@ public struct Tile
         _tileSize = (int)Math.Pow(2, layer);
 
         double scale = 1.0 / _tileSize;
-        _topLeftPoint = new Point(_x * scale, _y * scale);
-        _topRightPoint = new Point((_x + 1) * scale, _y * scale);
-        _bottomLeftPoint = new Point(_x * scale, (_y + 1) * scale);
-        _bottomRightPoint = new Point((_x + 1) * scale, (_y + 1) * scale);
+        _nearPoint = new Point(_x * scale, _y * scale);
+        _farPoint = new Point((_x + 1) * scale, (_y + 1) * scale);
     }
 
     /// <summary>
@@ -48,59 +44,41 @@ public struct Tile
     public readonly int TileSize => _tileSize;
 
     /// <summary>
-    /// 获取瓦片的左上角点。
+    /// 获取瓦片的近点（左上角点）。
     /// </summary>
-    public readonly Point TopLeftPoint => _topLeftPoint;
+    public readonly Point NearPoint => _nearPoint;
 
     /// <summary>
-    /// 获取瓦片的右上角点。
+    /// 获取瓦片的远点（右下角点）。
     /// </summary>
-    public readonly Point TopRightPoint => _topRightPoint;
-
-    /// <summary>
-    /// 获取瓦片的左下角点。
-    /// </summary>
-    public readonly Point BottomLeftPoint => _bottomLeftPoint;
-
-    /// <summary>
-    /// 获取瓦片的右下角点。
-    /// </summary>
-    public readonly Point BottomRightPoint => _bottomRightPoint;
+    public readonly Point FarPoint => _farPoint;
 
     /// <summary>
     /// 打印瓦片的详细信息到控制台。
     /// </summary>
     public void PrintTile()
     {
-        Console.WriteLine($"tlp:{TopLeftPoint.X},{TopLeftPoint.Y}");
-        Console.WriteLine($"trp:{TopRightPoint.X},{TopRightPoint.Y}");
-        Console.WriteLine($"blp:{BottomLeftPoint.X},{BottomLeftPoint.Y}");
-        Console.WriteLine($"brp:{BottomRightPoint.X},{BottomRightPoint.Y}");
+        Console.WriteLine($"near:{NearPoint.X},{NearPoint.Y}");
+        Console.WriteLine($"far:{FarPoint.X},{FarPoint.Y}");
         Console.WriteLine($"{X},{Y},{TileSize}");
     }
 
     /// <summary>
     /// 检查瓦片是否完全在单位圆内。
     /// </summary>
-    /// <returns>如果瓦片的四个角点都在单位圆内，则返回true；否则返回false。</returns>
+    /// <returns>如果瓦片的远点在单位圆内，则返回true；否则返回false。</returns>
     public bool IsInCircle()
     {
-        return IsPointInCircle(TopLeftPoint) &&
-               IsPointInCircle(TopRightPoint) &&
-               IsPointInCircle(BottomLeftPoint) &&
-               IsPointInCircle(BottomRightPoint);
+        return IsPointInCircle(FarPoint);
     }
 
     /// <summary>
     /// 检查瓦片是否完全在单位圆外。
     /// </summary>
-    /// <returns>如果瓦片的四个角点都在单位圆外，则返回true；否则返回false。</returns>
+    /// <returns>如果瓦片的近点在单位圆外，则返回true；否则返回false。</returns>
     public bool IsOutCircle()
     {
-        return !IsPointInCircle(TopLeftPoint) &&
-               !IsPointInCircle(TopRightPoint) &&
-               !IsPointInCircle(BottomLeftPoint) &&
-               !IsPointInCircle(BottomRightPoint);
+        return !IsPointInCircle(NearPoint);
     }
 
     /// <summary>
