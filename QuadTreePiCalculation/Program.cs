@@ -1,6 +1,6 @@
 ﻿using QuadTreePiCalculation;
 int layer = 0;
-int targetLayer = 6;
+int targetLayer = Convert.ToInt32(Console.ReadLine());
 
 Queue<Tile> tilesOnTheEdge = new Queue<Tile>();
 tilesOnTheEdge.Enqueue(new Tile(0, 0, layer));
@@ -8,10 +8,12 @@ Queue<int> resultQueue = new Queue<int>();
 
 while (layer < targetLayer)
 {
+#if DEBUG
+    Console.WriteLine($"当前Layer：{layer} 当前层任务负担：{tilesOnTheEdge.Count} 瓦片");
+#endif
     Queue<Tile> nextLayerTilesOnTheEdge = new Queue<Tile>();
     int currentLayerResultTiles = 0;
-    Parallel.ForEach(tilesOnTheEdge, tile =>
-    {
+    foreach (var tile in tilesOnTheEdge) {
         if (tile.IsInCircle())
         {
             currentLayerResultTiles++;
@@ -26,7 +28,7 @@ while (layer < targetLayer)
                 nextLayerTilesOnTheEdge.Enqueue(newTile);
             }
         }
-    });
+    };
     resultQueue.Enqueue(currentLayerResultTiles);
     tilesOnTheEdge = nextLayerTilesOnTheEdge;
     layer++;
@@ -34,7 +36,7 @@ while (layer < targetLayer)
 
 double result = 0;
 
-for (double i = 1; resultQueue.Count > 0; i /= 2)
+for (double i = 1; resultQueue.Count > 0; i /= 4)
 {
     result += resultQueue.Dequeue() * i;
 }
