@@ -2,16 +2,16 @@
 int layer = 0;
 int targetLayer = Convert.ToInt32(Console.ReadLine());
 
-Queue<Tile> tilesOnTheEdge = new Queue<Tile>();
+Queue<Tile> tilesOnTheEdge = new();
 tilesOnTheEdge.Enqueue(new Tile(0, 0, layer));
-Queue<int> resultQueue = new Queue<int>();
+Queue<int> resultQueue = new();
 
 while (layer < targetLayer)
 {
 #if DEBUG
     Console.WriteLine($"当前Layer：{layer} 当前层任务负担：{tilesOnTheEdge.Count} 瓦片");
 #endif
-    Queue<Tile> nextLayerTilesOnTheEdge = new Queue<Tile>();
+    Queue<Tile> nextLayerTilesOnTheEdge = new();
     int currentLayerResultTiles = 0;
     foreach (var tile in tilesOnTheEdge) {
         if (tile.IsInCircle())
@@ -24,7 +24,7 @@ while (layer < targetLayer)
             {
                 int newX = tile.X * 2 + (i % 2);
                 int newY = tile.Y * 2 + (i / 2);
-                Tile newTile = new Tile(newX, newY, layer + 1);
+                Tile newTile = new(newX, newY, layer + 1);
                 nextLayerTilesOnTheEdge.Enqueue(newTile);
             }
         }

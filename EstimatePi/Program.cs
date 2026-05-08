@@ -7,7 +7,7 @@ long pointsInsideCircle = 0;
 var parallelOptions = new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount * 2 };
 
 // 使用线程安全的Random生成器
-ThreadLocal<Random> randomGenerator = new ThreadLocal<Random>(() =>
+ThreadLocal<Random> randomGenerator = new(() =>
     new Random(Guid.NewGuid().GetHashCode()));
 
 var stopwatch = Stopwatch.StartNew();
