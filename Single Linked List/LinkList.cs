@@ -19,7 +19,7 @@
             {
                 throw new InvalidOperationException("链表为空或没有前一个节点。");
             }
-            Node<T> node = new Node<T>();
+            Node<T> node = new();
             node.data = input;
             tail.previous.next = node;
             node.previous = tail.previous;
@@ -90,7 +90,7 @@
                 throw new InvalidOperationException("链表为空。");
             }
             Node<T>? current = head;
-            Node<T> newNode = new Node<T>(input);
+            Node<T> newNode = new(input);
             for (int i = 0; i < index; i++)
             {
                 if (current.next == null)
