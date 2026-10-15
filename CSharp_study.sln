@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Single Linked List", "Singl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadTreePiCalculation", "QuadTreePiCalculation\QuadTreePiCalculation.csproj", "{474212D4-F900-448A-8940-7D39FE452C86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "雷霆中文编程", "雷霆中文编程\雷霆中文编程.csproj", "{C90DE1F4-6964-4728-ACBC-FE263A0654A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,18 @@ Global
 		{474212D4-F900-448A-8940-7D39FE452C86}.Release|x64.Build.0 = Release|Any CPU
 		{474212D4-F900-448A-8940-7D39FE452C86}.Release|x86.ActiveCfg = Release|Any CPU
 		{474212D4-F900-448A-8940-7D39FE452C86}.Release|x86.Build.0 = Release|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Debug|x64.Build.0 = Debug|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Debug|x86.Build.0 = Debug|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Release|x64.ActiveCfg = Release|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Release|x64.Build.0 = Release|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Release|x86.ActiveCfg = Release|Any CPU
+		{C90DE1F4-6964-4728-ACBC-FE263A0654A0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
